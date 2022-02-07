@@ -1,0 +1,238 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+
+  
+}
+
+body {
+  background-color: #5c85b8;
+  background-image:url(https://static.vecteezy.com/system/resources/previews/002/410/145/non_2x/forest-at-night-animals-silhouette-cartoon-background-free-vector.jpg);
+  margin: 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.header {
+  background-color:#0a3871;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.header h1 {
+  font-size: 30px;
+  color:#15FFE4;   
+}
+
+.instructions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.instructions h2 {
+  color:#FF5B00;   //#ffffff;
+  text-align: center;
+  margin: 0;
+}
+
+.instructions li {
+  font-size: 20px;
+  color:#ffffff;
+  margin: 0;
+}
+
+
+.buttons_inputs_container {
+  display: inherit;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+
+#start_button {
+  font-size: 45px;
+  background-color:#0F7B4A;   #0E3523;   #0a3871;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 10px;
+  border-style: groove ;
+  border-color:#30F099 ;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.restart_button {
+  position: absolute;
+  top: 100px;
+  left: 320px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-Color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 50px;
+  color: #ff0000;
+  font-family: Arial;
+  text-align: center;
+  line-height: 100px;
+}
+
+#add_button {
+  font-size: 30px;
+  background-color:#178151;   #234064;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 10px;
+  border-style: groove;
+  border-color:#30F099 ;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#input_new_word {
+  width: 100%;
+  height: 50px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  font-size: 30px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+#words_list {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+#show_words_list_link {
+  font-size: 20px;
+  color: #ffffff;
+  margin: 0;
+  cursor: pointer;
+}
+
+
+.started_message_show {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  background-Color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 50px;
+  color: #0a3871;
+  font-family: Arial;
+  text-align: center;
+  line-height: 100px;
+  transition: all 0.6s ease-in-out;
+}
+
+.you_are_acerted_message_show {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 1;
+  border: none;
+  cursor: pointer;
+  font-size: 50px;
+  color:#085031;  
+  font-family: Arial;
+  text-align: center;
+  line-height: 38px;
+  transition: all 0.4s ease-in-out;
+}
+
+.you_are_wrong_message_show {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 1;
+  border: none;
+  cursor: pointer;
+  font-size: 50px;
+  color:#B4040A; 
+  font-family: Arial;
+  text-align: center;
+  line-height: 38px;
+  transition: all 0.4s ease-in-out;
+}
+
+
+
+
+#canvas {
+  display: none;
+  border: 1px solid #000000;
+  margin: auto;
+}
+
+
+
+
+.footer {
+  position: inherit;
+  display: flex;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  color:#ffffff;
+  background-color:#055828;  
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  padding: 25px;
+  color:#D1F7CE;   
+}
+
+@media screen and (max-width: 600px) {
+  #canvas {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .restart_button {
+    top: 70px;
+    left: 85px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-Color:transparent;
+    cursor:pointer;
+    font-size: 30px;
+    color: #ff0000;
+    font-family: Arial;
+    text-align: center;
+    line-height: 100px;
+  }
+
+
+}
